@@ -40,6 +40,17 @@ public class OperationsInArrays {
             System.out.println("Month " + (index+1) + ": " + tempArray[index]);
         }
 
+
+        //Remove an element from an array
+        String[] monthOfYear1 = new String[]{"Jan", "Feb", "Mar", "Apr", "May", "Jun"};
+        int indexToDelete = 2; //removing "Mar"
+        if(indexToDelete >= 1 && indexToDelete < monthOfYear1.length){
+            monthOfYear1[indexToDelete] = null; //marking the element as null
+        }
+        for(int index=0; index< monthOfYear1.length; index++){
+            System.out.println("Month " + (index+1) + ": " + monthOfYear1[index]);  
+        }
+
     }
 
     
