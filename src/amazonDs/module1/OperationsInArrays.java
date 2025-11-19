@@ -51,6 +51,20 @@ public class OperationsInArrays {
             System.out.println("Month " + (index+1) + ": " + monthOfYear1[index]);  
         }
 
+
+        //Remove 2nd element in an array
+
+        String[] monthOfYear2 = new String[]{"Jan", "Feb", "Mar", "Apr", "May", "Jun"};
+        int deleteIndex = 1; //removing "Feb"
+        String[] newMonthArray = new String[monthOfYear2.length -1];
+        for(int index=0, i=0; index < monthOfYear2.length; index++){
+            if( index != deleteIndex){
+                newMonthArray[i++]= monthOfYear2[index];
+            }
+        }
+        for(int index=0; index< newMonthArray.length; index++){
+            System.out.println("Month " + (index+1) + ": " + newMonthArray[index]);  
+        }
     }
 
     
